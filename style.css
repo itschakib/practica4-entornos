@@ -1,0 +1,184 @@
+/* =======================================
+   GENERAL STYLING
+======================================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7f8fc;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* =======================================
+   HEADER
+======================================= */
+header {
+  background: linear-gradient(90deg, #4b0082, #8a2be2);
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+header img {
+  max-width: 120px;
+  margin-top: 1rem;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+/* =======================================
+   NAVIGATION
+======================================= */
+nav {
+  background-color: #333;
+  border-bottom: 3px solid #4b0082;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav li {
+  margin: 0.5rem 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #8a2be2;
+  transform: scale(1.05);
+}
+
+/* =======================================
+   MAIN CONTENT
+======================================= */
+main {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.8s ease;
+}
+
+h1, h2, h3 {
+  color: #4b0082;
+  margin-bottom: 1rem;
+  letter-spacing: 0.5px;
+}
+
+p, li {
+  font-size: 1.05rem;
+  margin-bottom: 1rem;
+}
+
+/* =======================================
+   CODE & PRE
+======================================= */
+pre {
+  background-color: #1e1e1e;
+  color: #f8f8f2;
+  padding: 1rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-family: 'Courier New', monospace;
+  font-size: 0.95rem;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+code {
+  background-color: #f0f0f0;
+  color: #c7254e;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+/* =======================================
+   IMAGES
+======================================= */
+img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin: 1rem 0;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.03);
+}
+
+/* =======================================
+   LINKS
+======================================= */
+a {
+  color: #4b0082;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* =======================================
+   FOOTER
+======================================= */
+footer {
+  background-color: #4b0082;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+/* =======================================
+   ANIMATIONS
+======================================= */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =======================================
+   RESPONSIVE DESIGN
+======================================= */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav li {
+    margin: 0.5rem 0;
+  }
+
+  main {
+    padding: 1.5rem;
+  }
+}
